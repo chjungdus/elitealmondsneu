@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0a05"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <!-- Strawberry bag gradient -->
+    <linearGradient id="b1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#282828"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <!-- Caramel bag gradient -->
+    <linearGradient id="b2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1e00"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <!-- Raspberry bag gradient -->
+    <linearGradient id="b3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0018"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <!-- Coconut bag gradient -->
+    <linearGradient id="b4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0ebe0"/>
+      <stop offset="100%" stop-color="#c8baa8"/>
+    </linearGradient>
+    <filter id="glow1"><feGaussianBlur stdDeviation="8" result="blur"/><feComposite in="SourceGraphic" in2="blur" operator="over"/></filter>
+  </defs>
+  <!-- Background -->
+  <rect width="700" height="500" fill="url(#heroBg)"/>
+  <!-- Ingredient decorations (strawberry) -->
+  <circle cx="60" cy="380" r="22" fill="#c0152a" opacity="0.7"/>
+  <circle cx="60" cy="380" r="13" fill="#e02040" opacity="0.6"/>
+  <!-- Caramel cubes -->
+  <rect x="580" y="370" width="20" height="20" rx="3" fill="#c87020" opacity="0.7" transform="rotate(15,590,380)"/>
+  <rect x="600" y="390" width="16" height="16" rx="3" fill="#a85a10" opacity="0.6" transform="rotate(-10,608,398)"/>
+  <!-- Raspberry dots -->
+  <circle cx="540" cy="80" r="14" fill="#b0006a" opacity="0.6"/>
+  <!-- Almond -->
+  <ellipse cx="630" cy="160" rx="16" ry="11" fill="#c8a870" opacity="0.6" transform="rotate(25,630,160)"/>
+  <!-- Blueberries -->
+  <circle cx="80" cy="120" r="12" fill="#3a1a6a" opacity="0.6"/>
+  <circle cx="100" cy="110" r="9" fill="#4a2a8a" opacity="0.5"/>
+
+  <!-- BAG 1 - Strawberry (slightly back/left, tilted) -->
+  <g transform="translate(90,60) rotate(-8) scale(0.88)">
+    <rect x="0" y="0" width="150" height="360" rx="22" fill="url(#b1)"/>
+    <rect x="0" y="0" width="150" height="26" rx="22" fill="#1e1e1e"/>
+    <circle cx="75" cy="13" r="6" fill="#0a0a0a" stroke="#333" stroke-width="0.8"/>
+    <text x="75" y="70" font-family="Georgia,serif" font-size="14" font-weight="bold" fill="#f0ebe0" text-anchor="middle" letter-spacing="3">ALMOND</text>
+    <text x="75" y="88" font-family="Georgia,serif" font-size="14" font-weight="bold" fill="#f0ebe0" text-anchor="middle" letter-spacing="3">ELITE</text>
+    <circle cx="75" cy="190" r="45" fill="rgba(0,0,0,0.3)"/>
+    <ellipse cx="75" cy="188" rx="32" ry="24" fill="#9b1528" transform="rotate(-15,75,188)"/>
+    <ellipse cx="75" cy="188" rx="18" ry="13" fill="#c0354a" transform="rotate(-15,75,188)"/>
+    <ellipse cx="75" cy="188" rx="9" ry="6" fill="#c8a870" transform="rotate(-15,75,188)"/>
+    <rect x="0" y="295" width="150" height="65" rx="22" fill="#9b1528"/>
+    <rect x="0" y="295" width="150" height="15" fill="#9b1528"/>
+    <text x="75" y="325" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Strawberry</text>
+    <text x="75" y="340" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Sensation</text>
+  </g>
+
+  <!-- BAG 2 - Caramel (center front, taller) -->
+  <g transform="translate(250,20) scale(1.05)">
+    <rect x="0" y="0" width="165" height="390" rx="24" fill="url(#b2)"/>
+    <rect x="0" y="0" width="165" height="28" rx="24" fill="#1e1e1e"/>
+    <circle cx="82" cy="14" r="7" fill="#0a0a0a" stroke="#333" stroke-width="0.8"/>
+    <text x="82" y="76" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="#f0ebe0" text-anchor="middle" letter-spacing="3">ALMOND</text>
+    <text x="82" y="97" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="#f0ebe0" text-anchor="middle" letter-spacing="3">ELITE</text>
+    <text x="82" y="116" font-family="Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.4)" text-anchor="middle" letter-spacing="2">SWEET · SALTY · ELITE</text>
+    <!-- Bestseller badge -->
+    <rect x="32" y="124" width="100" height="16" rx="8" fill="#c8702a"/>
+    <text x="82" y="136" font-family="Arial,sans-serif" font-size="7" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="1">BESTSELLER</text>
+    <circle cx="82" cy="225" r="55" fill="rgba(0,0,0,0.3)"/>
+    <ellipse cx="82" cy="222" rx="40" ry="30" fill="#b06810" transform="rotate(-15,82,222)"/>
+    <ellipse cx="82" cy="222" rx="25" ry="18" fill="#d4900a" transform="rotate(-15,82,222)"/>
+    <ellipse cx="82" cy="222" rx="14" ry="10" fill="#c8a870" transform="rotate(-15,82,222)"/>
+    <ellipse cx="82" cy="222" rx="7" ry="5" fill="#e8c890" transform="rotate(-15,82,222)"/>
+    <rect x="0" y="315" width="165" height="75" rx="24" fill="#b06810"/>
+    <rect x="0" y="315" width="165" height="16" fill="#b06810"/>
+    <text x="82" y="348" font-family="Georgia,serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Caramel</text>
+    <text x="82" y="366" font-family="Georgia,serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Gold</text>
+  </g>
+
+  <!-- BAG 3 - Raspberry (center, slightly behind) -->
+  <g transform="translate(430,50) rotate(5) scale(0.9)">
+    <rect x="0" y="0" width="155" height="370" rx="22" fill="url(#b3)"/>
+    <rect x="0" y="0" width="155" height="26" rx="22" fill="#1e1e1e"/>
+    <circle cx="77" cy="13" r="6" fill="#0a0a0a" stroke="#333" stroke-width="0.8"/>
+    <text x="77" y="72" font-family="Georgia,serif" font-size="14" font-weight="bold" fill="#f0ebe0" text-anchor="middle" letter-spacing="3">ALMOND</text>
+    <text x="77" y="90" font-family="Georgia,serif" font-size="14" font-weight="bold" fill="#f0ebe0" text-anchor="middle" letter-spacing="3">ELITE</text>
+    <circle cx="77" cy="200" r="50" fill="rgba(0,0,0,0.3)"/>
+    <ellipse cx="77" cy="197" rx="36" ry="28" fill="#7a0050" transform="rotate(-15,77,197)"/>
+    <ellipse cx="77" cy="197" rx="22" ry="16" fill="#b0006a" transform="rotate(-15,77,197)"/>
+    <ellipse cx="77" cy="197" rx="12" ry="8" fill="#c8a870" transform="rotate(-15,77,197)"/>
+    <rect x="0" y="305" width="155" height="65" rx="22" fill="#7a0050"/>
+    <rect x="0" y="305" width="155" height="15" fill="#7a0050"/>
+    <text x="77" y="333" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Raspberry</text>
+    <text x="77" y="349" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Dark</text>
+  </g>
+
+  <!-- BAG 4 - Coconut (right, tilted) -->
+  <g transform="translate(555,80) rotate(8) scale(0.82)">
+    <rect x="0" y="0" width="145" height="360" rx="20" fill="url(#b4)" stroke="#c8baa8" stroke-width="1"/>
+    <rect x="0" y="0" width="145" height="24" rx="20" fill="#e0d8cc"/>
+    <circle cx="72" cy="12" r="6" fill="#c8baa8" stroke="#b0a090" stroke-width="0.8"/>
+    <text x="72" y="68" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#2a1a0a" text-anchor="middle" letter-spacing="3">ALMOND</text>
+    <text x="72" y="85" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#2a1a0a" text-anchor="middle" letter-spacing="3">ELITE</text>
+    <circle cx="72" cy="195" r="46" fill="rgba(255,255,255,0.3)"/>
+    <ellipse cx="72" cy="192" rx="34" ry="26" fill="#c8baa8" transform="rotate(-15,72,192)"/>
+    <ellipse cx="72" cy="192" rx="20" ry="15" fill="#f0ebe0" transform="rotate(-15,72,192)"/>
+    <ellipse cx="72" cy="192" rx="10" ry="7" fill="#c8a870" transform="rotate(-15,72,192)"/>
+    <rect x="0" y="298" width="145" height="62" rx="20" fill="#b0a090"/>
+    <rect x="0" y="298" width="145" height="14" fill="#b0a090"/>
+    <text x="72" y="326" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Coconut</text>
+    <text x="72" y="341" font-family="Georgia,serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Cream</text>
+  </g>
+
+  <!-- "Pure Indulgence" tagline -->
+  <text x="350" y="475" font-family="Georgia,serif" font-size="18" font-style="italic" fill="#f0ebe0" text-anchor="middle" opacity="0.8">Pure Indulgence in Every Bite!</text>
+</svg>

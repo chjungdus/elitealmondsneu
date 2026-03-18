@@ -15,8 +15,11 @@
   <nav class="navbar scrolled" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
-        <span class="logo-text">ALMOND <span class="logo-accent">ELITE</span></span>
-        <span class="logo-tagline">Sweet. Salty. Elite.</span>
+        <img src="images/logo.svg" alt="Almond Elite Logo" class="logo-img" />
+        <div class="logo-text-wrap">
+          <span class="logo-text">ALMOND <span class="logo-accent">ELITE</span></span>
+          <span class="logo-tagline">Sweet. Salty. Elite.</span>
+        </div>
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html#products">Produkte</a></li>
@@ -85,14 +88,8 @@
       <div class="products-grid" id="productsGrid">
 
         <article class="product-card" data-flavor="strawberry" data-category="single" id="strawberry">
-          <div class="product-card-visual strawberry">
-            <div class="card-bg-glow"></div>
-            <div class="product-img-placeholder">
-              <div class="almond-visual">
-                <div class="av-outer" style="background: radial-gradient(circle, #e8536a, #8b0000)"></div>
-                <div class="av-inner"></div>
-              </div>
-            </div>
+          <div class="product-card-visual">
+            <img src="images/strawberry-sensation.svg" alt="Strawberry Sensation" class="product-img" />
             <span class="flavor-tag">NEU</span>
           </div>
           <div class="product-card-body">
@@ -114,14 +111,8 @@
         </article>
 
         <article class="product-card featured-card" data-flavor="caramel" data-category="single" id="caramel">
-          <div class="product-card-visual caramel">
-            <div class="card-bg-glow"></div>
-            <div class="product-img-placeholder">
-              <div class="almond-visual">
-                <div class="av-outer" style="background: radial-gradient(circle, #f0c040, #c27b27)"></div>
-                <div class="av-inner"></div>
-              </div>
-            </div>
+          <div class="product-card-visual">
+            <img src="images/caramel-gold.svg" alt="Caramel Gold" class="product-img" />
             <span class="flavor-tag bestseller-tag">Bestseller</span>
           </div>
           <div class="product-card-body">
@@ -143,14 +134,8 @@
         </article>
 
         <article class="product-card" data-flavor="raspberry" data-category="single" id="raspberry">
-          <div class="product-card-visual raspberry">
-            <div class="card-bg-glow"></div>
-            <div class="product-img-placeholder">
-              <div class="almond-visual">
-                <div class="av-outer" style="background: radial-gradient(circle, #e040a0, #7b0052)"></div>
-                <div class="av-inner"></div>
-              </div>
-            </div>
+          <div class="product-card-visual">
+            <img src="images/raspberry-dark.svg" alt="Raspberry Dark" class="product-img" />
             <span class="flavor-tag">Intensiv</span>
           </div>
           <div class="product-card-body">
@@ -172,14 +157,8 @@
         </article>
 
         <article class="product-card" data-flavor="coconut" data-category="single" id="coconut">
-          <div class="product-card-visual coconut">
-            <div class="card-bg-glow"></div>
-            <div class="product-img-placeholder">
-              <div class="almond-visual">
-                <div class="av-outer" style="background: radial-gradient(circle, #f5f0e8, #c8b89a)"></div>
-                <div class="av-inner"></div>
-              </div>
-            </div>
+          <div class="product-card-visual">
+            <img src="images/coconut-cream.svg" alt="Coconut Cream" class="product-img" />
             <span class="flavor-tag">Exotisch</span>
           </div>
           <div class="product-card-body">
@@ -201,14 +180,8 @@
         </article>
 
         <article class="product-card" data-flavor="mango" data-category="single" id="mango">
-          <div class="product-card-visual mango">
-            <div class="card-bg-glow"></div>
-            <div class="product-img-placeholder">
-              <div class="almond-visual">
-                <div class="av-outer" style="background: radial-gradient(circle, #ffb347, #e67e22)"></div>
-                <div class="av-inner"></div>
-              </div>
-            </div>
+          <div class="product-card-visual">
+            <img src="images/tropical-mango.svg" alt="Tropical Mango" class="product-img" />
             <span class="flavor-tag">Tropical</span>
           </div>
           <div class="product-card-body">
@@ -230,14 +203,8 @@
         </article>
 
         <article class="product-card" data-flavor="saltedchoc" data-category="single">
-          <div class="product-card-visual saltedchoc">
-            <div class="card-bg-glow"></div>
-            <div class="product-img-placeholder">
-              <div class="almond-visual">
-                <div class="av-outer" style="background: radial-gradient(circle, #8B6914, #4a2c00)"></div>
-                <div class="av-inner"></div>
-              </div>
-            </div>
+          <div class="product-card-visual">
+            <img src="images/salted-caramel.svg" alt="Salted Caramel Milk Chocolate" class="product-img" />
             <span class="flavor-tag">Klassisch</span>
           </div>
           <div class="product-card-body">
@@ -297,7 +264,7 @@
             <span class="old-price">35,94 €</span>
             <span class="new-price">26,99 €</span>
           </div>
-          <div style="font-size:0.78rem;color:var(--gold);margin-bottom:20px;">Du sparst 8,95 € ✓</div>
+          <div style="font-size:0.78rem;color:var(--accent);margin-bottom:20px;">Du sparst 8,95 € ✓</div>
           <button class="btn btn-primary btn-sm add-to-cart"
             data-name="Party Set (6er – alle Sorten)"
             data-price="26.99"
@@ -352,7 +319,7 @@
             </div>
           </div>
           <div style="margin-top:20px;padding:16px;background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.15);border-radius:12px;font-size:0.82rem;color:var(--text-secondary);">
-            <strong style="color:var(--gold);">Gratis Versand ab 30 €</strong><br>
+            <strong style="color:var(--accent);">Gratis Versand ab 30 €</strong><br>
             Lieferung innerhalb von 2–4 Werktagen via DHL.
           </div>
         </div>
@@ -410,15 +377,15 @@
             <p class="form-section-title">Zahlungsmethode</p>
             <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
               <label style="display:flex;align-items:center;gap:12px;padding:14px 18px;background:rgba(255,255,255,0.04);border:1px solid var(--border-hover);border-radius:10px;cursor:pointer;font-size:0.88rem;color:var(--text-primary);">
-                <input type="radio" name="payment" value="paypal" required style="accent-color:var(--gold);width:16px;height:16px;" />
+                <input type="radio" name="payment" value="paypal" required style="accent-color:var(--accent);width:16px;height:16px;" />
                 PayPal
               </label>
               <label style="display:flex;align-items:center;gap:12px;padding:14px 18px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:10px;cursor:pointer;font-size:0.88rem;color:var(--text-primary);">
-                <input type="radio" name="payment" value="card" style="accent-color:var(--gold);width:16px;height:16px;" />
+                <input type="radio" name="payment" value="card" style="accent-color:var(--accent);width:16px;height:16px;" />
                 Kreditkarte (Visa / Mastercard)
               </label>
               <label style="display:flex;align-items:center;gap:12px;padding:14px 18px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:10px;cursor:pointer;font-size:0.88rem;color:var(--text-primary);">
-                <input type="radio" name="payment" value="bank" style="accent-color:var(--gold);width:16px;height:16px;" />
+                <input type="radio" name="payment" value="bank" style="accent-color:var(--accent);width:16px;height:16px;" />
                 Klarna / Sofortüberweisung
               </label>
             </div>
@@ -427,7 +394,7 @@
               Jetzt kostenpflichtig bestellen
             </button>
             <p style="font-size:0.75rem;color:var(--text-muted);text-align:center;margin-top:12px;">
-              Mit der Bestellung akzeptierst du unsere <a href="#" style="color:var(--gold);">AGB</a> und <a href="#" style="color:var(--gold);">Datenschutzrichtlinien</a>.
+              Mit der Bestellung akzeptierst du unsere <a href="#" style="color:var(--accent);">AGB</a> und <a href="#" style="color:var(--accent);">Datenschutzrichtlinien</a>.
             </p>
             <div style="display:flex;justify-content:center;gap:16px;margin-top:16px;opacity:0.5;">
               <svg width="40" height="24" viewBox="0 0 60 36" fill="none"><rect width="60" height="36" rx="4" fill="#1A1F71"/><path d="M24 24h-3l1.8-12H26L24 24zm13.2-11.7c-.6-.2-1.6-.5-2.8-.5-3.1 0-5.3 1.6-5.3 3.9 0 1.7 1.5 2.6 2.7 3.2 1.2.6 1.6.9 1.6 1.4 0 .8-.9 1.1-1.8 1.1-1.2 0-1.9-.2-2.9-.6l-.4-.2-.4 2.7c.7.3 2 .6 3.3.6 3.3 0 5.5-1.6 5.5-4.1 0-1.4-.8-2.4-2.6-3.2-1.1-.5-1.7-.9-1.7-1.4 0-.5.6-.9 1.7-.9 1 0 1.7.2 2.3.4l.3.1.4-2.5z" fill="white"/></svg>

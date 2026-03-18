@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#3d1a08"/>
+      <stop offset="100%" stop-color="#1a0a03"/>
+    </radialGradient>
+    <linearGradient id="choc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5c2e08"/>
+      <stop offset="100%" stop-color="#2a1004"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="url(#bg)" stroke="#c8702a" stroke-width="2"/>
+  <!-- Chocolate splash shape -->
+  <ellipse cx="100" cy="115" rx="72" ry="52" fill="url(#choc)" opacity="0.8"/>
+  <!-- Fruit decorations -->
+  <circle cx="55" cy="70" r="18" fill="#8b1a2a" opacity="0.9"/>
+  <circle cx="55" cy="70" r="11" fill="#c0152a"/>
+  <circle cx="145" cy="68" r="15" fill="#c87020" opacity="0.9"/>
+  <circle cx="145" cy="68" r="9" fill="#e8901a"/>
+  <circle cx="100" cy="52" r="12" fill="#5a2e8a" opacity="0.9"/>
+  <circle cx="100" cy="52" r="7" fill="#7a40b0"/>
+  <!-- Almond in center -->
+  <ellipse cx="100" cy="118" rx="28" ry="20" fill="#c8a870" transform="rotate(-15,100,118)"/>
+  <ellipse cx="100" cy="118" rx="16" ry="11" fill="#e8c890" transform="rotate(-15,100,118)"/>
+  <ellipse cx="100" cy="118" rx="8" ry="5" fill="#f0dca8" transform="rotate(-15,100,118)"/>
+  <!-- Brand text -->
+  <text x="100" y="158" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#f5ede0" text-anchor="middle" letter-spacing="2">ALMOND</text>
+  <text x="100" y="175" font-family="Georgia,serif" font-size="13" font-weight="bold" fill="#c8702a" text-anchor="middle" letter-spacing="2">ELITE</text>
+</svg>

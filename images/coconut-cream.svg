@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400">
+  <defs>
+    <linearGradient id="bag" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#f5f0e8"/>
+      <stop offset="100%" stop-color="#d8cfc0"/>
+    </linearGradient>
+    <linearGradient id="stripe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b0a090"/>
+      <stop offset="100%" stop-color="#c8baa8"/>
+    </linearGradient>
+    <linearGradient id="almondGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d8d0c0"/>
+      <stop offset="100%" stop-color="#a09080"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="150" cy="396" rx="100" ry="7" fill="rgba(0,0,0,0.3)"/>
+  <rect x="35" y="15" width="230" height="368" rx="26" fill="url(#bag)" stroke="#c8baa8" stroke-width="1"/>
+  <rect x="35" y="40" width="6" height="318" rx="3" fill="rgba(255,255,255,0.3)"/>
+  <rect x="259" y="40" width="6" height="318" rx="3" fill="rgba(255,255,255,0.3)"/>
+  <rect x="35" y="15" width="230" height="30" rx="26" fill="#e0d8cc"/>
+  <circle cx="150" cy="30" r="8" fill="#c8baa8" stroke="#b0a090" stroke-width="1"/>
+  <line x1="60" y1="65" x2="240" y2="65" stroke="rgba(0,0,0,0.1)" stroke-width="0.5"/>
+  <text x="150" y="100" font-family="Georgia,serif" font-size="22" font-weight="bold" fill="#2a1a0a" text-anchor="middle" letter-spacing="5">ALMOND</text>
+  <text x="150" y="128" font-family="Georgia,serif" font-size="22" font-weight="bold" fill="#2a1a0a" text-anchor="middle" letter-spacing="5">ELITE</text>
+  <text x="150" y="148" font-family="Arial,sans-serif" font-size="8" fill="rgba(0,0,0,0.4)" text-anchor="middle" letter-spacing="3">SWEET · SALTY · ELITE</text>
+  <line x1="60" y1="162" x2="240" y2="162" stroke="rgba(0,0,0,0.1)" stroke-width="0.5"/>
+  <circle cx="150" cy="235" r="62" fill="rgba(255,255,255,0.4)" stroke="rgba(0,0,0,0.1)" stroke-width="1"/>
+  <ellipse cx="150" cy="232" rx="44" ry="34" fill="url(#almondGrad)" transform="rotate(-18,150,232)"/>
+  <ellipse cx="150" cy="232" rx="28" ry="20" fill="#f0ebe0" transform="rotate(-18,150,232)"/>
+  <!-- Coconut flakes -->
+  <ellipse cx="130" cy="218" rx="8" ry="3" fill="white" transform="rotate(20,130,218)" opacity="0.8"/>
+  <ellipse cx="168" cy="248" rx="7" ry="2.5" fill="white" transform="rotate(-30,168,248)" opacity="0.8"/>
+  <ellipse cx="145" cy="250" rx="6" ry="2" fill="white" transform="rotate(10,145,250)" opacity="0.7"/>
+  <!-- Almond center -->
+  <ellipse cx="150" cy="232" rx="12" ry="8" fill="#c8a870" transform="rotate(-18,150,232)"/>
+  <ellipse cx="150" cy="232" rx="6" ry="4" fill="#e8c890" transform="rotate(-18,150,232)"/>
+  <rect x="35" y="307" width="230" height="76" rx="26" fill="url(#stripe)"/>
+  <rect x="35" y="307" width="230" height="20" fill="url(#stripe)"/>
+  <text x="150" y="340" font-family="Georgia,serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="1">Coconut</text>
+  <text x="150" y="358" font-family="Georgia,serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="1">Cream</text>
+  <rect x="115" y="278" width="70" height="20" rx="10" fill="rgba(0,0,0,0.1)" stroke="rgba(0,0,0,0.2)" stroke-width="0.5"/>
+  <text x="150" y="293" font-family="Arial,sans-serif" font-size="9" fill="rgba(0,0,0,0.5)" text-anchor="middle">120g</text>
+</svg>
