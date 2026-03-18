@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Almond Elite – Sweet. Salty. Elite.</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">ALMOND <span class="logo-accent">ELITE</span></span>
+        <span class="logo-tagline">Sweet. Salty. Elite.</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#products">Produkte</a></li>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#flavors">Sorten</a></li>
+        <li><a href="shop.html" class="nav-shop-link">Shop</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="shop.html" class="cart-btn" id="cartBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">NEU & EXKLUSIV</p>
+      <h1 class="hero-title">
+        Pure Indulgence<br/>
+        <em>in Every Bite!</em>
+      </h1>
+      <p class="hero-subtitle">Premium Mandeln mit erlesenen Zutaten – ein einzigartiges Geschmackserlebnis</p>
+      <div class="hero-actions">
+        <a href="shop.html" class="btn btn-primary">Jetzt kaufen</a>
+        <a href="#products" class="btn btn-outline">Sorten entdecken</a>
+      </div>
+      <div class="hero-badges">
+        <div class="badge"><span>120g</span>pro Beutel</div>
+        <div class="badge"><span>6</span>Sorten</div>
+        <div class="badge"><span>100%</span>Premium</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-products-showcase">
+        <div class="showcase-product showcase-1">
+          <div class="product-glow strawberry-glow"></div>
+          <div class="product-bag strawberry-bag">
+            <div class="bag-label">Strawberry<br>Sensation</div>
+          </div>
+        </div>
+        <div class="showcase-product showcase-2 featured">
+          <div class="product-glow caramel-glow"></div>
+          <div class="product-bag caramel-bag">
+            <div class="bag-label">Caramel<br>Gold</div>
+          </div>
+        </div>
+        <div class="showcase-product showcase-3">
+          <div class="product-glow raspberry-glow"></div>
+          <div class="product-bag raspberry-bag">
+            <div class="bag-label">Raspberry<br>Dark</div>
+          </div>
+        </div>
+        <div class="showcase-product showcase-4">
+          <div class="product-glow coconut-glow"></div>
+          <div class="product-bag coconut-bag">
+            <div class="bag-label">Coconut<br>Cream</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== USP STRIP ===== -->
+  <section class="usp-strip">
+    <div class="container">
+      <div class="usp-grid">
+        <div class="usp-item">
+          <div class="usp-icon">✦</div>
+          <span>Premium Zutaten</span>
+        </div>
+        <div class="usp-item">
+          <div class="usp-icon">✦</div>
+          <span>Handgefertigt</span>
+        </div>
+        <div class="usp-item">
+          <div class="usp-icon">✦</div>
+          <span>6 exklusive Sorten</span>
+        </div>
+        <div class="usp-item">
+          <div class="usp-icon">✦</div>
+          <span>Gratis Versand ab 30€</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS / FLAVORS ===== -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Unsere Sorten</p>
+        <h2 class="section-title">Wähle deinen <em>Favoriten</em></h2>
+        <p class="section-desc">Jede Sorte ist ein einzigartiges Geschmackserlebnis – Premium-Mandeln in verführerischer Schokolade.</p>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <article class="product-card" data-flavor="strawberry" data-price="5.99">
+          <div class="product-card-visual strawberry">
+            <div class="card-bg-glow"></div>
+            <div class="product-img-placeholder">
+              <div class="almond-visual">
+                <div class="av-outer" style="background: radial-gradient(circle, #e8536a, #8b0000)"></div>
+                <div class="av-inner"></div>
+              </div>
+            </div>
+            <span class="flavor-tag">NEU</span>
+          </div>
+          <div class="product-card-body">
+            <h3>Strawberry Sensation</h3>
+            <p>Knackige Mandeln in zarter Erdbeer-Schokolade – süß, fruchtig, unwiderstehlich.</p>
+            <div class="product-meta">
+              <span class="price">5,99 €</span>
+              <span class="weight">120g</span>
+            </div>
+            <button class="btn btn-primary btn-sm add-to-cart"
+              data-name="Strawberry Sensation"
+              data-price="5.99"
+              data-color="strawberry">In den Warenkorb</button>
+          </div>
+        </article>
+
+        <article class="product-card featured-card" data-flavor="caramel" data-price="5.99">
+          <div class="product-card-visual caramel">
+            <div class="card-bg-glow"></div>
+            <div class="product-img-placeholder">
+              <div class="almond-visual">
+                <div class="av-outer" style="background: radial-gradient(circle, #f0c040, #c27b27)"></div>
+                <div class="av-inner"></div>
+              </div>
+            </div>
+            <span class="flavor-tag bestseller-tag">Bestseller</span>
+          </div>
+          <div class="product-card-body">
+            <h3>Caramel Gold</h3>
+            <p>Salzige Mandeln trifft auf cremiges Karamell – der verführerischste Genuss.</p>
+            <div class="product-meta">
+              <span class="price">5,99 €</span>
+              <span class="weight">120g</span>
+            </div>
+            <button class="btn btn-primary btn-sm add-to-cart"
+              data-name="Caramel Gold"
+              data-price="5.99"
+              data-color="caramel">In den Warenkorb</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-flavor="raspberry" data-price="5.99">
+          <div class="product-card-visual raspberry">
+            <div class="card-bg-glow"></div>
+            <div class="product-img-placeholder">
+              <div class="almond-visual">
+                <div class="av-outer" style="background: radial-gradient(circle, #e040a0, #7b0052)"></div>
+                <div class="av-inner"></div>
+              </div>
+            </div>
+            <span class="flavor-tag">Intensiv</span>
+          </div>
+          <div class="product-card-body">
+            <h3>Raspberry Dark</h3>
+            <p>Premium-Mandeln in dunkler Himbeerschokolade – intensiv, fruchtig, dunkel.</p>
+            <div class="product-meta">
+              <span class="price">5,99 €</span>
+              <span class="weight">120g</span>
+            </div>
+            <button class="btn btn-primary btn-sm add-to-cart"
+              data-name="Raspberry Dark"
+              data-price="5.99"
+              data-color="raspberry">In den Warenkorb</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-flavor="coconut" data-price="5.99">
+          <div class="product-card-visual coconut">
+            <div class="card-bg-glow"></div>
+            <div class="product-img-placeholder">
+              <div class="almond-visual">
+                <div class="av-outer" style="background: radial-gradient(circle, #f5f0e8, #c8b89a)"></div>
+                <div class="av-inner"></div>
+              </div>
+            </div>
+            <span class="flavor-tag">Exotisch</span>
+          </div>
+          <div class="product-card-body">
+            <h3>Coconut Cream</h3>
+            <p>Zarte Kokos-Schokolade mit knackiger Mandel – tropischer Luxusgenuss.</p>
+            <div class="product-meta">
+              <span class="price">5,99 €</span>
+              <span class="weight">120g</span>
+            </div>
+            <button class="btn btn-primary btn-sm add-to-cart"
+              data-name="Coconut Cream"
+              data-price="5.99"
+              data-color="coconut">In den Warenkorb</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-flavor="mango" data-price="5.99">
+          <div class="product-card-visual mango">
+            <div class="card-bg-glow"></div>
+            <div class="product-img-placeholder">
+              <div class="almond-visual">
+                <div class="av-outer" style="background: radial-gradient(circle, #ffb347, #e67e22)"></div>
+                <div class="av-inner"></div>
+              </div>
+            </div>
+            <span class="flavor-tag">Tropical</span>
+          </div>
+          <div class="product-card-body">
+            <h3>Tropical Mango</h3>
+            <p>Süße Mango trifft auf cremige weiße Schokolade – Urlaub in jedem Biss.</p>
+            <div class="product-meta">
+              <span class="price">5,99 €</span>
+              <span class="weight">120g</span>
+            </div>
+            <button class="btn btn-primary btn-sm add-to-cart"
+              data-name="Tropical Mango"
+              data-price="5.99"
+              data-color="mango">In den Warenkorb</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-flavor="saltedchoc" data-price="5.99">
+          <div class="product-card-visual saltedchoc">
+            <div class="card-bg-glow"></div>
+            <div class="product-img-placeholder">
+              <div class="almond-visual">
+                <div class="av-outer" style="background: radial-gradient(circle, #8B6914, #4a2c00)"></div>
+                <div class="av-inner"></div>
+              </div>
+            </div>
+            <span class="flavor-tag">Klassisch</span>
+          </div>
+          <div class="product-card-body">
+            <h3>Salted Caramel Milk Chocolate</h3>
+            <p>Das Original – Salzkaramell-Mandeln in samtiger Vollmilchschokolade.</p>
+            <div class="product-meta">
+              <span class="price">5,99 €</span>
+              <span class="weight">120g</span>
+            </div>
+            <button class="btn btn-primary btn-sm add-to-cart"
+              data-name="Salted Caramel Milk Chocolate"
+              data-price="5.99"
+              data-color="saltedchoc">In den Warenkorb</button>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="products-cta">
+        <a href="shop.html" class="btn btn-primary btn-lg">Alle Sorten im Shop</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FLAVOR EXPERIENCE BANNER ===== -->
+  <section class="experience-banner">
+    <div class="experience-inner">
+      <div class="exp-content">
+        <p class="section-eyebrow">Das Erlebnis</p>
+        <h2>Jeder Biss ist ein <em>Moment des Genusses</em></h2>
+        <p>Wir wählen nur die besten Mandeln und kombinieren sie mit erlesenen Zutaten. Das Ergebnis: Ein unvergleichliches Geschmackserlebnis, das du nie vergessen wirst.</p>
+        <ul class="exp-list">
+          <li><span class="check">✓</span> Natürliche Zutaten, keine Konservierungsstoffe</li>
+          <li><span class="check">✓</span> Knusprig & cremig zugleich</li>
+          <li><span class="check">✓</span> Perfektes Gleichgewicht von süß & salzig</li>
+          <li><span class="check">✓</span> Ideal zum Verschenken oder Genießen</li>
+        </ul>
+        <a href="shop.html" class="btn btn-primary">Jetzt bestellen</a>
+      </div>
+      <div class="exp-visual">
+        <div class="exp-circle-outer">
+          <div class="exp-circle-mid">
+            <div class="exp-circle-inner">
+              <div class="exp-product-display">
+                <div class="exp-almond exp-a1"></div>
+                <div class="exp-almond exp-a2"></div>
+                <div class="exp-almond exp-a3"></div>
+                <span class="exp-tagline">Sweet.<br>Salty.<br>Elite.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BUNDLE SECTION ===== -->
+  <section class="bundles-section" id="bundles">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Sparpakete</p>
+        <h2>Mehr Sorten, <em>mehr Genuss</em></h2>
+      </div>
+      <div class="bundles-grid">
+        <div class="bundle-card">
+          <div class="bundle-badge">Starter</div>
+          <h3>Tasting Set</h3>
+          <p>3 verschiedene Sorten – der perfekte Einstieg</p>
+          <div class="bundle-items">3 × 120g</div>
+          <div class="bundle-price">
+            <span class="old-price">17,97 €</span>
+            <span class="new-price">14,99 €</span>
+          </div>
+          <button class="btn btn-outline btn-sm add-to-cart"
+            data-name="Tasting Set (3er)"
+            data-price="14.99"
+            data-color="caramel">In den Warenkorb</button>
+        </div>
+        <div class="bundle-card featured-bundle">
+          <div class="bundle-badge popular-badge">Beliebt</div>
+          <h3>Party Set</h3>
+          <p>Alle 6 Sorten – für die größte Entdeckungsreise</p>
+          <div class="bundle-items">6 × 120g</div>
+          <div class="bundle-price">
+            <span class="old-price">35,94 €</span>
+            <span class="new-price">26,99 €</span>
+          </div>
+          <button class="btn btn-primary btn-sm add-to-cart"
+            data-name="Party Set (6er)"
+            data-price="26.99"
+            data-color="caramel">In den Warenkorb</button>
+        </div>
+        <div class="bundle-card">
+          <div class="bundle-badge">Geschenk</div>
+          <h3>Geschenk-Box</h3>
+          <p>4 Lieblingssorten in edler Geschenkverpackung</p>
+          <div class="bundle-items">4 × 120g + Box</div>
+          <div class="bundle-price">
+            <span class="old-price">27,96 €</span>
+            <span class="new-price">21,99 €</span>
+          </div>
+          <button class="btn btn-outline btn-sm add-to-cart"
+            data-name="Geschenk-Box (4er)"
+            data-price="21.99"
+            data-color="caramel">In den Warenkorb</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <p class="section-eyebrow">Unsere Geschichte</p>
+          <h2>Die Kunst des <em>perfekten Genusses</em></h2>
+          <p>Almond Elite entstand aus einer einfachen Leidenschaft: die besten Mandeln der Welt mit den feinsten Schokoladensorten zu vereinen. Was als kleines Experiment begann, ist heute eine Erfolgsgeschichte voller Geschmack und Qualität.</p>
+          <p>Jeder Beutel wird mit größter Sorgfalt hergestellt – von der Auswahl der Mandeln bis zur letzten Schicht Schokolade. Wir glauben, dass echter Genuss keine Kompromisse kennt.</p>
+          <div class="about-stats">
+            <div class="stat"><strong>6</strong><span>Einzigartige Sorten</span></div>
+            <div class="stat"><strong>100%</strong><span>Premium Qualität</span></div>
+            <div class="stat"><strong>∞</strong><span>Genussmomente</span></div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card-stack">
+            <div class="about-card ac-back strawberry"></div>
+            <div class="about-card ac-mid caramel"></div>
+            <div class="about-card ac-front raspberry">
+              <div class="ac-text">
+                <p>"Pure Indulgence in Every Bite!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Kundenstimmen</p>
+        <h2>Was unsere Kunden <em>sagen</em></h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Absolut unglaublich! Der Caramel Gold ist mein absoluter Favorit. Einmal probiert – für immer verliebt."</p>
+          <div class="reviewer">– Sarah M.</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Das perfekte Geschenk! Das Party Set kam super an. Jede Sorte ist ein kleines Meisterwerk."</p>
+          <div class="reviewer">– Thomas K.</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Raspberry Dark ist der Hammer – die Kombination aus dunkler Schokolade und Himbeere ist einfach perfekt."</p>
+          <div class="reviewer">– Lisa B.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="nl-content">
+          <h2>Bleib immer <em>up to date</em></h2>
+          <p>Neue Sorten, exklusive Angebote, Gewinne – alles direkt in dein Postfach.</p>
+        </div>
+        <form class="nl-form" id="nlForm">
+          <input type="email" placeholder="Deine E-Mail-Adresse" required />
+          <button type="submit" class="btn btn-primary">Anmelden</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">ALMOND <span class="logo-accent">ELITE</span></span>
+          <p class="footer-tagline">Sweet. Salty. Elite.</p>
+          <p>Premium Schokoladen-Mandeln für echte Genießer.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="TikTok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.7a4.85 4.85 0 01-1.01-.01z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Produkte</h4>
+          <ul>
+            <li><a href="shop.html">Alle Sorten</a></li>
+            <li><a href="shop.html#caramel">Caramel Gold</a></li>
+            <li><a href="shop.html#strawberry">Strawberry Sensation</a></li>
+            <li><a href="shop.html#raspberry">Raspberry Dark</a></li>
+            <li><a href="shop.html#bundles">Sparpakete</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Unternehmen</h4>
+          <ul>
+            <li><a href="#about">Über uns</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Presse</a></li>
+            <li><a href="#">Karriere</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Service</h4>
+          <ul>
+            <li><a href="#">Versand & Lieferung</a></li>
+            <li><a href="#">Rückgabe</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Datenschutz</a></li>
+            <li><a href="#">Impressum</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Almond Elite. Alle Rechte vorbehalten.</p>
+        <p>Sweet. Salty. Elite.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CART SIDEBAR ===== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Warenkorb</h3>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <p>Dein Warenkorb ist leer.</p>
+        <a href="#products" class="btn btn-outline btn-sm" id="startShoppingBtn">Jetzt entdecken</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Gesamt</span>
+        <strong id="cartTotal">0,00 €</strong>
+      </div>
+      <a href="shop.html#checkout" class="btn btn-primary btn-full">Zur Kasse</a>
+      <p class="cart-note">Gratis Versand ab 30 € ✓</p>
+    </div>
+  </aside>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

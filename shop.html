@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop – Almond Elite</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">ALMOND <span class="logo-accent">ELITE</span></span>
+        <span class="logo-tagline">Sweet. Salty. Elite.</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#products">Produkte</a></li>
+        <li><a href="index.html#about">Über uns</a></li>
+        <li><a href="index.html#flavors">Sorten</a></li>
+        <li><a href="shop.html" class="nav-shop-link">Shop</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== SHOP HERO ===== -->
+  <section class="shop-hero">
+    <div class="container">
+      <p class="section-eyebrow">Online Shop</p>
+      <h1>Alle <em>Sorten</em> entdecken</h1>
+      <p>Premium Schokoladen-Mandeln in 6 unwiderstehlichen Geschmacksrichtungen – direkt zu dir nach Hause.</p>
+    </div>
+  </section>
+
+  <!-- ===== USP STRIP ===== -->
+  <div class="usp-strip">
+    <div class="container">
+      <div class="usp-grid">
+        <div class="usp-item"><div class="usp-icon">✦</div><span>Gratis Versand ab 30 €</span></div>
+        <div class="usp-item"><div class="usp-icon">✦</div><span>2–4 Werktage Lieferung</span></div>
+        <div class="usp-item"><div class="usp-icon">✦</div><span>14 Tage Rückgabe</span></div>
+        <div class="usp-item"><div class="usp-icon">✦</div><span>Sicher bezahlen</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FILTER BAR ===== -->
+  <div class="shop-filters">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Alle</button>
+        <button class="filter-btn" data-filter="single">Einzeln</button>
+        <button class="filter-btn" data-filter="bundle">Sparpakete</button>
+        <button class="filter-btn" data-filter="strawberry">Strawberry</button>
+        <button class="filter-btn" data-filter="caramel">Caramel</button>
+        <button class="filter-btn" data-filter="raspberry">Raspberry</button>
+        <button class="filter-btn" data-filter="coconut">Coconut</button>
+        <button class="filter-btn" data-filter="mango">Mango</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SINGLE PRODUCTS ===== -->
+  <section class="shop-grid-section">
+    <div class="container">
+
+      <div class="section-header" style="margin-bottom: 40px;">
+        <p class="section-eyebrow">Einzeln kaufen</p>
+        <h2>Wähle deine <em>Lieblingssorte</em></h2>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <article class="product-card" data-flavor="strawberry" data-category="single" id="strawberry">
+          <div class="product-card-visual strawberry">
+            <div class="card-bg-glow"></div>
+            <div class="product-img-placeholder">
+              <div class="almond-visual">
+                <div class="av-outer" style="background: radial-gradient(circle, #e8536a, #8b0000)"></div>
+                <div class="av-inner"></div>
+              </div>
+            </div>
+            <span class="flavor-tag">NEU</span>
+          </div>
+          <div class="product-card-body">
+            <h3>Strawberry Sensation</h3>
+            <p>Knackige Mandeln umhüllt von zarter Erdbeer-Schokolade. Süß, fruchtig, unwiderstehlich.</p>
+            <div class="product-meta">
+              <span class="price">5,99 €</span>
+              <span class="weight">120g</span>
+            </div>
+            <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+              <span style="font-size:0.75rem;color:var(--text-muted)">✓ Glutenfrei</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">✓ Natürliche Zutaten</span>
+            </div>
+            <button class="btn btn-primary btn-sm add-to-cart"
+              data-name="Strawberry Sensation"
+              data-price="5.99"
+              data-color="strawberry">In den Warenkorb</button>
+          </div>
+        </article>
+
+        <article class="product-card featured-card" data-flavor="caramel" data-category="single" id="caramel">
+          <div class="product-card-visual caramel">
+            <div class="card-bg-glow"></div>
+            <div class="product-img-placeholder">
+              <div class="almond-visual">
+                <div class="av-outer" style="background: radial-gradient(circle, #f0c040, #c27b27)"></div>
+                <div class="av-inner"></div>
+              </div>
+            </div>
+            <span class="flavor-tag bestseller-tag">Bestseller</span>
+          </div>
+          <div class="product-card-body">
+            <h3>Caramel Gold</h3>
+            <p>Salzige Mandeln trifft auf cremiges Karamell in edler Schokolade. Der Klassiker schlechthin.</p>
+            <div class="product-meta">
+              <span class="price">5,99 €</span>
+              <span class="weight">120g</span>
+            </div>
+            <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+              <span style="font-size:0.75rem;color:var(--text-muted)">✓ Glutenfrei</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">✓ Natürliche Zutaten</span>
+            </div>
+            <button class="btn btn-primary btn-sm add-to-cart"
+              data-name="Caramel Gold"
+              data-price="5.99"
+              data-color="caramel">In den Warenkorb</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-flavor="raspberry" data-category="single" id="raspberry">
+          <div class="product-card-visual raspberry">
+            <div class="card-bg-glow"></div>
+            <div class="product-img-placeholder">
+              <div class="almond-visual">
+                <div class="av-outer" style="background: radial-gradient(circle, #e040a0, #7b0052)"></div>
+                <div class="av-inner"></div>
+              </div>
+            </div>
+            <span class="flavor-tag">Intensiv</span>
+          </div>
+          <div class="product-card-body">
+            <h3>Raspberry Dark</h3>
+            <p>Premium-Mandeln in dunkler Himbeerschokolade. Intensiv, fruchtig und verführerisch dunkel.</p>
+            <div class="product-meta">
+              <span class="price">5,99 €</span>
+              <span class="weight">120g</span>
+            </div>
+            <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+              <span style="font-size:0.75rem;color:var(--text-muted)">✓ Vegan</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">✓ Dark Chocolate</span>
+            </div>
+            <button class="btn btn-primary btn-sm add-to-cart"
+              data-name="Raspberry Dark"
+              data-price="5.99"
+              data-color="raspberry">In den Warenkorb</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-flavor="coconut" data-category="single" id="coconut">
+          <div class="product-card-visual coconut">
+            <div class="card-bg-glow"></div>
+            <div class="product-img-placeholder">
+              <div class="almond-visual">
+                <div class="av-outer" style="background: radial-gradient(circle, #f5f0e8, #c8b89a)"></div>
+                <div class="av-inner"></div>
+              </div>
+            </div>
+            <span class="flavor-tag">Exotisch</span>
+          </div>
+          <div class="product-card-body">
+            <h3>Coconut Cream</h3>
+            <p>Zarte Kokos-Schokolade kombiniert mit der perfekten knackigen Mandel – tropischer Luxus.</p>
+            <div class="product-meta">
+              <span class="price">5,99 €</span>
+              <span class="weight">120g</span>
+            </div>
+            <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+              <span style="font-size:0.75rem;color:var(--text-muted)">✓ White Chocolate</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">✓ Exotisch</span>
+            </div>
+            <button class="btn btn-primary btn-sm add-to-cart"
+              data-name="Coconut Cream"
+              data-price="5.99"
+              data-color="coconut">In den Warenkorb</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-flavor="mango" data-category="single" id="mango">
+          <div class="product-card-visual mango">
+            <div class="card-bg-glow"></div>
+            <div class="product-img-placeholder">
+              <div class="almond-visual">
+                <div class="av-outer" style="background: radial-gradient(circle, #ffb347, #e67e22)"></div>
+                <div class="av-inner"></div>
+              </div>
+            </div>
+            <span class="flavor-tag">Tropical</span>
+          </div>
+          <div class="product-card-body">
+            <h3>Tropical Mango</h3>
+            <p>Süße Mango trifft auf cremige weiße Schokolade und knackige Mandeln – pure Tropenfreude.</p>
+            <div class="product-meta">
+              <span class="price">5,99 €</span>
+              <span class="weight">120g</span>
+            </div>
+            <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+              <span style="font-size:0.75rem;color:var(--text-muted)">✓ Tropical Fruit</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">✓ White Chocolate</span>
+            </div>
+            <button class="btn btn-primary btn-sm add-to-cart"
+              data-name="Tropical Mango"
+              data-price="5.99"
+              data-color="mango">In den Warenkorb</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-flavor="saltedchoc" data-category="single">
+          <div class="product-card-visual saltedchoc">
+            <div class="card-bg-glow"></div>
+            <div class="product-img-placeholder">
+              <div class="almond-visual">
+                <div class="av-outer" style="background: radial-gradient(circle, #8B6914, #4a2c00)"></div>
+                <div class="av-inner"></div>
+              </div>
+            </div>
+            <span class="flavor-tag">Klassisch</span>
+          </div>
+          <div class="product-card-body">
+            <h3>Salted Caramel Milk Chocolate</h3>
+            <p>Das Original – Salzkaramell-Mandeln in samtiger Vollmilchschokolade. Ein zeitloser Klassiker.</p>
+            <div class="product-meta">
+              <span class="price">5,99 €</span>
+              <span class="weight">120g</span>
+            </div>
+            <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+              <span style="font-size:0.75rem;color:var(--text-muted)">✓ Milk Chocolate</span>
+              <span style="font-size:0.75rem;color:var(--text-muted)">✓ Salted Caramel</span>
+            </div>
+            <button class="btn btn-primary btn-sm add-to-cart"
+              data-name="Salted Caramel Milk Chocolate"
+              data-price="5.99"
+              data-color="saltedchoc">In den Warenkorb</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BUNDLES ===== -->
+  <section class="bundles-section" id="bundles">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Sparpakete</p>
+        <h2>Mehr bestellen, <em>mehr sparen</em></h2>
+        <p class="section-desc">Unsere Bundles bieten dir die perfekte Möglichkeit, alle Sorten zu entdecken oder Freunde zu überraschen.</p>
+      </div>
+
+      <div class="bundles-grid">
+        <div class="bundle-card" data-category="bundle">
+          <div class="bundle-badge">Starter</div>
+          <h3>Tasting Set</h3>
+          <p>3 verschiedene Sorten deiner Wahl – der perfekte Einstieg in die Welt von Almond Elite.</p>
+          <div class="bundle-items">3 × 120g nach Wahl</div>
+          <div class="bundle-price">
+            <span class="old-price">17,97 €</span>
+            <span class="new-price">14,99 €</span>
+          </div>
+          <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:20px;">Du sparst 2,98 €</div>
+          <button class="btn btn-outline btn-sm add-to-cart"
+            data-name="Tasting Set (3er)"
+            data-price="14.99"
+            data-color="caramel">In den Warenkorb</button>
+        </div>
+
+        <div class="bundle-card featured-bundle" data-category="bundle">
+          <div class="bundle-badge popular-badge">Beliebt</div>
+          <h3>Party Set</h3>
+          <p>Alle 6 Sorten auf einmal – für die ultimative Almond Elite Entdeckungsreise.</p>
+          <div class="bundle-items">6 × 120g – alle Sorten</div>
+          <div class="bundle-price">
+            <span class="old-price">35,94 €</span>
+            <span class="new-price">26,99 €</span>
+          </div>
+          <div style="font-size:0.78rem;color:var(--gold);margin-bottom:20px;">Du sparst 8,95 € ✓</div>
+          <button class="btn btn-primary btn-sm add-to-cart"
+            data-name="Party Set (6er – alle Sorten)"
+            data-price="26.99"
+            data-color="caramel">In den Warenkorb</button>
+        </div>
+
+        <div class="bundle-card" data-category="bundle">
+          <div class="bundle-badge">Geschenk</div>
+          <h3>Geschenk-Box</h3>
+          <p>4 Lieblingssorten in edler Geschenkverpackung – das perfekte Präsent für jeden Anlass.</p>
+          <div class="bundle-items">4 × 120g + Geschenk-Box</div>
+          <div class="bundle-price">
+            <span class="old-price">27,96 €</span>
+            <span class="new-price">21,99 €</span>
+          </div>
+          <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:20px;">Du sparst 5,97 €</div>
+          <button class="btn btn-outline btn-sm add-to-cart"
+            data-name="Geschenk-Box (4er)"
+            data-price="21.99"
+            data-color="caramel">In den Warenkorb</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHECKOUT SECTION ===== -->
+  <section class="checkout-section" id="checkout">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Kasse</p>
+        <h2>Deine <em>Bestellung</em></h2>
+      </div>
+
+      <div class="checkout-grid">
+        <!-- Order Summary -->
+        <div class="checkout-summary">
+          <h3>Zusammenfassung</h3>
+          <div id="checkoutSummaryItems">
+            <div class="summary-item">
+              <span>Noch keine Produkte im Warenkorb</span>
+              <span>–</span>
+            </div>
+          </div>
+          <div id="checkoutTotal">
+            <div class="summary-item">
+              <span>Versand</span>
+              <span>4,99 €</span>
+            </div>
+            <div class="summary-total">
+              <span>Gesamt</span>
+              <strong>4,99 €</strong>
+            </div>
+          </div>
+          <div style="margin-top:20px;padding:16px;background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.15);border-radius:12px;font-size:0.82rem;color:var(--text-secondary);">
+            <strong style="color:var(--gold);">Gratis Versand ab 30 €</strong><br>
+            Lieferung innerhalb von 2–4 Werktagen via DHL.
+          </div>
+        </div>
+
+        <!-- Checkout Form -->
+        <div class="checkout-form-wrap">
+          <h3>Lieferdetails</h3>
+          <form id="checkoutForm">
+            <p class="form-section-title">Kontaktdaten</p>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Vorname</label>
+                <input type="text" placeholder="Max" required />
+              </div>
+              <div class="form-group">
+                <label>Nachname</label>
+                <input type="text" placeholder="Mustermann" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>E-Mail-Adresse</label>
+              <input type="email" placeholder="max@beispiel.de" required />
+            </div>
+            <div class="form-group">
+              <label>Telefon (optional)</label>
+              <input type="tel" placeholder="+49 123 4567890" />
+            </div>
+
+            <p class="form-section-title">Lieferadresse</p>
+            <div class="form-group">
+              <label>Straße & Hausnummer</label>
+              <input type="text" placeholder="Musterstraße 42" required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>PLZ</label>
+                <input type="text" placeholder="10115" required />
+              </div>
+              <div class="form-group">
+                <label>Stadt</label>
+                <input type="text" placeholder="Berlin" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Land</label>
+              <select required>
+                <option value="de">Deutschland</option>
+                <option value="at">Österreich</option>
+                <option value="ch">Schweiz</option>
+                <option value="nl">Niederlande</option>
+                <option value="be">Belgien</option>
+              </select>
+            </div>
+
+            <p class="form-section-title">Zahlungsmethode</p>
+            <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
+              <label style="display:flex;align-items:center;gap:12px;padding:14px 18px;background:rgba(255,255,255,0.04);border:1px solid var(--border-hover);border-radius:10px;cursor:pointer;font-size:0.88rem;color:var(--text-primary);">
+                <input type="radio" name="payment" value="paypal" required style="accent-color:var(--gold);width:16px;height:16px;" />
+                PayPal
+              </label>
+              <label style="display:flex;align-items:center;gap:12px;padding:14px 18px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:10px;cursor:pointer;font-size:0.88rem;color:var(--text-primary);">
+                <input type="radio" name="payment" value="card" style="accent-color:var(--gold);width:16px;height:16px;" />
+                Kreditkarte (Visa / Mastercard)
+              </label>
+              <label style="display:flex;align-items:center;gap:12px;padding:14px 18px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:10px;cursor:pointer;font-size:0.88rem;color:var(--text-primary);">
+                <input type="radio" name="payment" value="bank" style="accent-color:var(--gold);width:16px;height:16px;" />
+                Klarna / Sofortüberweisung
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full btn-lg">
+              Jetzt kostenpflichtig bestellen
+            </button>
+            <p style="font-size:0.75rem;color:var(--text-muted);text-align:center;margin-top:12px;">
+              Mit der Bestellung akzeptierst du unsere <a href="#" style="color:var(--gold);">AGB</a> und <a href="#" style="color:var(--gold);">Datenschutzrichtlinien</a>.
+            </p>
+            <div style="display:flex;justify-content:center;gap:16px;margin-top:16px;opacity:0.5;">
+              <svg width="40" height="24" viewBox="0 0 60 36" fill="none"><rect width="60" height="36" rx="4" fill="#1A1F71"/><path d="M24 24h-3l1.8-12H26L24 24zm13.2-11.7c-.6-.2-1.6-.5-2.8-.5-3.1 0-5.3 1.6-5.3 3.9 0 1.7 1.5 2.6 2.7 3.2 1.2.6 1.6.9 1.6 1.4 0 .8-.9 1.1-1.8 1.1-1.2 0-1.9-.2-2.9-.6l-.4-.2-.4 2.7c.7.3 2 .6 3.3.6 3.3 0 5.5-1.6 5.5-4.1 0-1.4-.8-2.4-2.6-3.2-1.1-.5-1.7-.9-1.7-1.4 0-.5.6-.9 1.7-.9 1 0 1.7.2 2.3.4l.3.1.4-2.5z" fill="white"/></svg>
+              <svg width="40" height="24" viewBox="0 0 60 36" fill="none"><rect width="60" height="36" rx="4" fill="#252525"/><circle cx="24" cy="18" r="10" fill="#EB001B"/><circle cx="36" cy="18" r="10" fill="#F79E1B"/><path d="M30 10.6a10 10 0 010 14.8 10 10 0 010-14.8z" fill="#FF5F00"/></svg>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">ALMOND <span class="logo-accent">ELITE</span></span>
+          <p class="footer-tagline">Sweet. Salty. Elite.</p>
+          <p>Premium Schokoladen-Mandeln für echte Genießer.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="TikTok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.7a4.85 4.85 0 01-1.01-.01z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Sorten</h4>
+          <ul>
+            <li><a href="#strawberry">Strawberry Sensation</a></li>
+            <li><a href="#caramel">Caramel Gold</a></li>
+            <li><a href="#raspberry">Raspberry Dark</a></li>
+            <li><a href="#coconut">Coconut Cream</a></li>
+            <li><a href="#mango">Tropical Mango</a></li>
+            <li><a href="#bundles">Sparpakete</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Unternehmen</h4>
+          <ul>
+            <li><a href="index.html#about">Über uns</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Presse</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Service</h4>
+          <ul>
+            <li><a href="#">Versand & Lieferung</a></li>
+            <li><a href="#">Rückgabe</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Datenschutz</a></li>
+            <li><a href="#">Impressum</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Almond Elite. Alle Rechte vorbehalten.</p>
+        <p>Sweet. Salty. Elite.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CART SIDEBAR ===== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Warenkorb</h3>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <p>Dein Warenkorb ist leer.</p>
+        <button class="btn btn-outline btn-sm" onclick="document.getElementById('cartClose').click()">Weiter einkaufen</button>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Gesamt</span>
+        <strong id="cartTotal">0,00 €</strong>
+      </div>
+      <a href="#checkout" class="btn btn-primary btn-full" id="toCheckoutBtn">Zur Kasse</a>
+      <p class="cart-note">Gratis Versand ab 30 € ✓</p>
+    </div>
+  </aside>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Close cart and scroll to checkout on click
+    document.getElementById('toCheckoutBtn') && document.getElementById('toCheckoutBtn').addEventListener('click', () => {
+      document.getElementById('cartSidebar').classList.remove('open');
+      document.getElementById('cartOverlay').classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  </script>
+</body>
+</html>
